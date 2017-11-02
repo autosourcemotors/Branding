@@ -242,11 +242,6 @@ a:hover {
     overflow: hidden;
     cursor: pointer;
 }
-.youtube:hover {
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(204, 0, 0, 0.67);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(204, 0, 0, 0.67);
-  box-shadow: 0px 0px 20px 0px rgba(204, 0, 0, 0.67);
-}
 .youtube img {
     width: 100%;
     top: -16.82%;
