@@ -1,3 +1,11 @@
+::selection {
+    color: #fff;
+    background: #cc0000; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    color: #fff;
+    background: #cc0000; /* Gecko Browsers */
+}
 .l-list-inline {
   margin: 0;
   padding: 0;
