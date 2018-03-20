@@ -86,5 +86,4 @@ $(".hover").mouseleave(
 
 $(document).ready(function() {
     $('h1.entry-title').css('visibility', 'hidden');
-    $("#teambanner").addClass("carbonfiber");
   });
