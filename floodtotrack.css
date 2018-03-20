@@ -47,8 +47,8 @@ body {font-family: "Open Sans", sans-serif;}
   #timeline .card-wrapper {
     display: flex;
     flex-flow: column wrap;
-    width: 1040px;  /* 1170px */
-    height: 1175px; /* 1750px */
+    width: 100%; /* 1170px  1040px*/
+    height: 1175px; /* 1750px 1175px*/
     padding: 25px;
   }
 }
