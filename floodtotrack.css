@@ -215,7 +215,6 @@ body {font-family: "Open Sans", sans-serif;}
   flex-flow: row wrap;
   text-align: center;
   width: 100%;
-  background: #fff;
   padding: 50px 0 0 0;
 }
 #banner .container {
@@ -242,7 +241,6 @@ body {font-family: "Open Sans", sans-serif;}
   text-align: center;
   margin: auto;
 }
-
 /* Section 3 */
 .meettheteam {
   color:#000;
@@ -311,17 +309,6 @@ body {font-family: "Open Sans", sans-serif;}
   text-align:left;
   font-weight: 400;
 }
-#header {
-    background: #222;
-  background-image: url("https://www.transparenttextures.com/patterns/real-carbon-fibre.png"),
-    linear-gradient(#222, #444);
-  background-image: url("https://www.transparenttextures.com/patterns/real-carbon-fibre.png"),
-    -webkit-gradient(linear, left top, left bottom, from(#222), to(#444));
-  background-image: url("https://www.transparenttextures.com/patterns/real-carbon-fibre.png"),
-    -moz-linear-gradient(top, #333, #111);
-  border-bottom: 3px #cc0000 solid;
-}
-
 @media all and (min-width: 600px) {
   .aside { flex: 1 auto; }
 }
@@ -359,7 +346,6 @@ body {font-family: "Open Sans", sans-serif;}
     max-width:375px;
   }
 }
-
 /* Photos */
 .photo {
   background-color: #000;
@@ -420,7 +406,6 @@ body {font-family: "Open Sans", sans-serif;}
   -webkit-box-shadow: 0 0 10px #000000;
   box-shadow: 0 0 10px #000000;
 }
-
 .photo h3 {
   background-color: #cc0000;
   border: 2px solid #fff;
@@ -432,7 +417,6 @@ body {font-family: "Open Sans", sans-serif;}
   padding: 5px 10px;
   text-transform: uppercase;
 }
-
 .photo a {
   position: absolute;
   top: 0;
@@ -441,31 +425,26 @@ body {font-family: "Open Sans", sans-serif;}
   right: 0;
   z-index: 3;
 }
-
 .photo:hover > img,
 .photo.hover > img {
   opacity: 0.5;
 }
-
 .photo:hover:before,
 .photo.hover:before {
   -webkit-transform: skew(45deg) translateX(-55%);
   transform: skew(45deg) translateX(-55%);
 }
-
 .photo:hover:after,
 .photo.hover:after {
   -webkit-transform: skew(45deg) translateX(55%);
   transform: skew(45deg) translateX(55%);
 }
-
 .photo:hover figcaption,
 .photo.hover figcaption {
   -webkit-transform: translate(-50%, -50%) scale(1);
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 }
-
 /* Modal */
 .Modal-overlay {
   display: none;
@@ -516,4 +495,15 @@ body {font-family: "Open Sans", sans-serif;}
 }
 .Modal-cancel-overflow {
   overflow: hidden;
+}
+.carbonfiber {
+  background: #222;
+  background-image: url("https://www.transparenttextures.com/patterns/real-carbon-fibre.png"),
+    linear-gradient(#222, #444);
+  background-image: url("https://www.transparenttextures.com/patterns/real-carbon-fibre.png"),
+    -webkit-gradient(linear, left top, left bottom, from(#222), to(#444));
+  background-image: url("https://www.transparenttextures.com/patterns/real-carbon-fibre.png"),
+    -moz-linear-gradient(top, #333, #111);
+  border-bottom: 3px #cc0000 solid;
+  color: #fff;
 }
