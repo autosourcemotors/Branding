@@ -1,4 +1,5 @@
-#banner .contain {padding: 0% 10% 15%}
+#all {font-family: "Open Sans", sans-serif;}
+#section1 .contain {padding: 0% 10% 15%}
 @media (min-width: 1000px) {
   #timeline .card:nth-child(odd) .head::after,
   #timeline .card:nth-child(even) .head::after {
@@ -30,7 +31,6 @@
 * {box-sizing: border-box;} /* Border Box */
 
 /* Fonts */
-body {font-family: "Open Sans", sans-serif;}
 #timeline {
   padding: 25px 0;
   background: #f2f2f2;
@@ -115,7 +115,7 @@ body {font-family: "Open Sans", sans-serif;}
   #timeline .card:nth-child(2) {
     margin-top: 180px;
   }
-  #banner .contain {
+  #section1 .contain {
     padding: 0% 10% 5%;
     margin: 0 auto;
   }
@@ -165,7 +165,7 @@ body {font-family: "Open Sans", sans-serif;}
     font-size: 0.8rem;
   }
 }
-#timeline .card .body {
+#timeline .card .cardbox {
   background: #fff;
   border: 1px solid rgba(191, 191, 191, 0.4);
   border-top: 0;
@@ -175,11 +175,11 @@ body {font-family: "Open Sans", sans-serif;}
   .page-mask {
     padding:15%;
   }
-  #timeline .card .body {
+  #timeline .card .cardbox {
     height: auto;
   }
 }
-#timeline .card .body p {
+#timeline .card .cardbox p {
   font-size: 14px;
   line-height: 22px;
   margin-bottom: 10px;
@@ -191,7 +191,7 @@ body {font-family: "Open Sans", sans-serif;}
   position: relative;
   text-align: center;
 }
-#timeline .card .body img {
+#timeline .card .cardbox img {
   width: 100%;
   height: auto;
   max-height:275px;
@@ -210,26 +210,26 @@ body {font-family: "Open Sans", sans-serif;}
 #timeline .card .head::after {
   border-color: #cc0000;
 }
-#banner {
+#section1 {
   display: flex;  
   flex-flow: row wrap;
   text-align: center;
   width: 100%;
-  padding: 50px 0 0 0;
 }
-#banner .contain {
+#section1 .contain {
   width: 100%;
   max-width: 1170px;
+  padding: 5% 10%;
 }
-#banner a {
+#section1 a {
   text-decoration:none;
   color: #cc0000;
   font-weight:600;
 }
-#banner a:hover {
+#section1 a:hover {
   color: #990000;
 }
-#banner h1 {
+#section1 h1 {
   text-align: center;
   font-size: 3rem;
   margin: 0 0 15px 0;
@@ -237,7 +237,7 @@ body {font-family: "Open Sans", sans-serif;}
   font-weight: 600;
   text-transform: uppercase;
 }
-#banner p.leader {
+#section1 p.leader {
   text-align: center;
   margin: auto;
 }
@@ -506,4 +506,6 @@ body {font-family: "Open Sans", sans-serif;}
     -moz-linear-gradient(top, #333, #111);
   border-bottom: 3px #cc0000 solid;
   color: #fff;
+  width: 100%;
+  padding: 5% 10%;
 }
