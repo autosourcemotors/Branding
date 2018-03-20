@@ -1,4 +1,4 @@
-#banner .container {padding: 0% 10% 15%}
+#banner .contain {padding: 0% 10% 15%}
 @media (min-width: 1000px) {
   #timeline .card:nth-child(odd) .head::after,
   #timeline .card:nth-child(even) .head::after {
@@ -115,7 +115,7 @@ body {font-family: "Open Sans", sans-serif;}
   #timeline .card:nth-child(2) {
     margin-top: 180px;
   }
-  #banner .container {
+  #banner .contain {
     padding: 0% 10% 5%;
     margin: 0 auto;
   }
@@ -217,7 +217,7 @@ body {font-family: "Open Sans", sans-serif;}
   width: 100%;
   padding: 50px 0 0 0;
 }
-#banner .container {
+#banner .contain {
   width: 100%;
   max-width: 1170px;
 }
@@ -467,7 +467,7 @@ body {font-family: "Open Sans", sans-serif;}
   padding-right: 15px;
   position: relative;
 }
-.Modal-box > .video-container {
+.Modal-box > .video-contain {
   position: relative;
   display: block;
   height: 0;
@@ -475,7 +475,7 @@ body {font-family: "Open Sans", sans-serif;}
   overflow: hidden;
   padding-bottom: 56.25%;
 }
-.Modal-box > .video-container > iframe, .Modal-box > .video-container > object, .Modal-box > .video-container > embed {
+.Modal-box > .video-contain > iframe, .Modal-box > .video-contain > object, .Modal-box > .video-contain > embed {
   position: absolute;
   top: 0;
   bottom: 0;
