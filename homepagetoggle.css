@@ -31,10 +31,9 @@
 }
 .banner {
   font-weight: bold;
-  text-transform: uppercase;
   height: 12.5vh;
   color: #fff;
-  font-size: 4em;
+  font-size: 64px;
   margin: -10px 0 0 0;
 }
 .one {
@@ -43,7 +42,6 @@
   background-size: cover;
   background-position: 50% 59%;
   height: 100%;
-  cursor: pointer;
 }
 .two {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("https://2.bp.blogspot.com/-lbcDA66tCfM/WrCLnTFoTsI/AAAAAAAAREs/ZPF1tTkXzvUOx3SO9UYbKQ6u1I3lXAETgCLcBGAs/s1600/IMG_5146.jpg");
@@ -51,7 +49,6 @@
   background-size: cover;
   background-position: center center;
   height: 100%;
-  cursor: pointer;
 }
 .hoverbox {
   position: absolute;
@@ -78,50 +75,42 @@
     font-size: .55em;
   }
 }
-
-.row a,
-  .row a:hover {
-    color: #fff;
-  }
-
-  .flyout {
-    position: absolute;
-    width: 1000px;
-    height: 450px;
-    background: red;
-    overflow: hidden;
-    z-index: 10000;
-    display: none;
-  }
-
-  #menu:hover+.flyout {
-    display: block;
-  }
-
-  .hov {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(204, 0, 0, .7);
-    opacity: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: .35em;
-    padding: 25px;
-  }
-
-  .hov a,
-  .hov a:hover {
-    color: #cc0000;
-  }
-
-  .hovbutton {
-    border: 1px solid #fff;
-    padding: 10px 15px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: .75em;
-    background: #fff;
-    color: #cc0000;
-  }
+.row a, .row a:hover {
+  color: #fff;
+}
+.flyout {
+  position: absolute;
+  width: 1000px;
+  height: 450px;
+  background: red;
+  overflow: hidden;
+  z-index: 10000;
+  display: none;
+}
+#menu:hover+.flyout {
+  display: block;
+}
+.hov {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(204, 0, 0, .7);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .35em;
+  padding: 25px;
+}
+.hov a, .hov a:hover {
+  color: #cc0000;
+}
+.hovbutton {
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: .75em;
+  background: #fff;
+  color: #cc0000;
+}
