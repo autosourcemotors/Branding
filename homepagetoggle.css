@@ -6,8 +6,8 @@
   margin: 0 !important;
 }
 #customSalesEventRow {
-  margin: -5px 0 0 0 !important;
-  width: 100%;
+  margin: -10px 0 0 0 !important;
+  width: 100vw !important;
   background: #fff !important;
   display: inline-block !important;
 }
@@ -15,9 +15,6 @@
   padding: 0 !important;
   width: 100vw !important;
   display: inline-block !important;
-}
-.override {
-  padding: 0 !important;
 }
 .container-wide {
   width: 100vw !important;
