@@ -45,6 +45,7 @@ infobar {
   .infobar {
     display: inline;
   }
+.row a, .row a:hover {color:#fff;}
 
   .center {
     display: flex;
