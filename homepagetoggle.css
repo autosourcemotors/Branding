@@ -51,12 +51,12 @@ infobar::after {
   justify-content: center;
 }
 .banner {
-  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
   height: 12.5vh;
   color: #fff;
   font-size: 4em;
+  margin: -10px 0 0 0;
 }
 .one {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2018/04/flood_to_track-2.jpg");
