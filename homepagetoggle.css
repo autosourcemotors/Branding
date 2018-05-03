@@ -27,6 +27,22 @@
     margin: -5px 0 0 0 !important;
   }
 .infobar {
+    margin: 0;
+    position: absolute;
+    background: #111;
+    z-index: 1;
+    background: #303030;
+    width: 100vw;
+    positon: absolute;
+  }
+
+  .infobar::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .infobar {
     display: inline;
   }
 
