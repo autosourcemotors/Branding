@@ -35,6 +35,7 @@
     width: 100vw;
     positon: absolute;
   }
+.row a, .row a:hover {color: #fff;}
 
   .infobar::after {
     content: "";
