@@ -52,18 +52,13 @@ infobar {
     justify-content: center;
   }
 
-  .hover,
-  .hover:hover, .hover * {
-    color: #fff;
-  }
-
   .banner {
+    font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
-    height: 12.5vh;
+    height: 12vh;
     color: #fff;
     font-size: 4em;
-    margin: -10px 0 0 0;
   }
 .banner a {
   color:#fff;
