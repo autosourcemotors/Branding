@@ -12,7 +12,12 @@
   background: #fff !important;
   display: inline-block !important;
 }
-
+#customSalesEventRow .container-wide {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100vw !important;
+    display: inline-block !important;
+}
 .override {
   width: 100%;
   height: 12vh;
