@@ -26,7 +26,7 @@
   .expanded-row-content {
     margin: -5px 0 0 0 !important;
   }
-.infobar {
+infobar {
     margin: 0;
     position: absolute;
     background: #111;
@@ -35,9 +35,8 @@
     width: 100vw;
     positon: absolute;
   }
-.row a, .row a:hover {color: #fff;}
 
-  .infobar::after {
+  infobar::after {
     content: "";
     display: block;
     clear: both;
