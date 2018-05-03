@@ -12,7 +12,7 @@
 }
 #customSalesEventRow .container-wide {
     padding: 0 !important;
-    margin: -5px 0 -5px 0 !important;
+    margin: -10px 0 0 0 !important;
     width: 100vw !important;
     display: inline-block !important;
 }
@@ -27,9 +27,6 @@
   margin: -5px auto 0 auto !important;
   padding-left: 0px !important;
   padding-right: 0px !important;
-}
-nav {
-  margin: -5px 0;
 }
 infobar {
   margin: 0;
