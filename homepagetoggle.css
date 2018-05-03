@@ -1,115 +1,80 @@
-  .expanded-toggle {
-    display: none !important;
-  }
-
-  #videobanner,
-  .video-wrapper {
-    height: 85vh !important;
-    margin: 0 !important;
-  }
-
-  #customSalesEventRow {
-    margin: 0 !important;
-    width: 100vw !important;
-    background: #fff !important;
-    display: inline-block !important;
-  }
-
-  #customSalesEventRow .container-wide {
-    padding: 0 !important;
-    display: inline-block !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    margin: -10px auto 0 auto !important;
-  }
-
-  .expanded-row-content {
-    margin: -5px 0 0 0 !important;
-  }
-infobar {
-    margin: 0;
-    position: absolute;
-    background: #111;
-    z-index: 1;
-    background: #303030;
-    width: 100vw;
-    positon: absolute;
-  }
-
-  infobar::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-
-  .infobar {
-    display: inline;
-  }
-.row a, .row a:hover {color:#fff;}
-
-  .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .banner {
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    height: 12vh;
-    color: #fff;
-    font-size: 4em;
-  }
-.banner a {
-  color:#fff;
-  text-decoration:none;
+.expanded-toggle {
+  display: none !important;
 }
-
-  .one {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2018/04/flood_to_track-2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 59%;
-    height: 100%;
-    cursor: pointer;
-  }
-
-  .two {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("https://2.bp.blogspot.com/-lbcDA66tCfM/WrCLnTFoTsI/AAAAAAAAREs/ZPF1tTkXzvUOx3SO9UYbKQ6u1I3lXAETgCLcBGAs/s1600/IMG_5146.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100%;
-    cursor: pointer;
-  }
-
-  .hoverbox {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(204, 0, 0, .5);
-    opacity: 0;
-    transition-duration: 0.3s
-  }
-
-  .one:hover>.hoverbox {
-    opacity: 1;
-    transition-duration: 0.3s
-  }
-
-  .two:hover>.hoverbox {
-    opacity: 1;
-    transition-duration: 0.3s
-  }
-
+#videobanner, .video-wrapper {
+  height: 85vh !important;
+  margin: 0 !important;
+}
+#customSalesEventRow {
+  margin: 0 !important;
+  width: 100vw !important;
+  background: #fff !important;
+  display: inline-block !important;
+}
+#customSalesEventRow .container-wide {
+  padding: 0 !important;
+  display: inline-block !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin: -10px auto 0 auto !important;
+}
+.expanded-row-content {
+  margin: -5px 0 0 0 !important;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hover, .hover:hover {
+  color: #fff;
+}
+.banner {
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 12.5vh;
+  color: #fff;
+  font-size: 4em;
+  margin: -10px 0 0 0;
+}
+.one {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2018/04/flood_to_track-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 59%;
+  height: 100%;
+  cursor: pointer;
+}
+.two {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("https://2.bp.blogspot.com/-lbcDA66tCfM/WrCLnTFoTsI/AAAAAAAAREs/ZPF1tTkXzvUOx3SO9UYbKQ6u1I3lXAETgCLcBGAs/s1600/IMG_5146.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  cursor: pointer;
+}
+.hoverbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(204, 0, 0, .5);
+  opacity: 0;
+  transition-duration: 0.3s
+}
+.one:hover>.hoverbox {
+  opacity: 1;
+  transition-duration: 0.3s
+}
+.two:hover>.hoverbox {
+  opacity: 1;
+  transition-duration: 0.3s
+}
+.banner h1 {
+  z-index: 2;
+  font-size: .55em;
+}
+@media screen and (max-width: 768px) {
   .banner h1 {
-    z-index: 2;
     font-size: .55em;
   }
-
-  @media screen and (max-width: 768px) {
-    .banner h1 {
-      font-size: .55em;
-    }
-  }
+}
