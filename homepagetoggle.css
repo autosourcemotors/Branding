@@ -34,7 +34,7 @@
   }
 
   .hover,
-  .hover:hover {
+  .hover:hover, .hover * {
     color: #fff;
   }
 
