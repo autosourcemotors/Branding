@@ -2,7 +2,7 @@
   display: none !important;
 }
 #videobanner, .video-wrapper {
-  height: 84vh !important;
+  height: 85vh !important;
   margin: 0 !important;
 }
 #customSalesEventRow {
@@ -14,7 +14,7 @@
 }
 #customSalesEventRow .container-wide {
     padding: 0 !important;
-    margin: 0 !important;
+    margin: -5px 0 -5px 0 !important;
     width: 100vw !important;
     display: inline-block !important;
 }
