@@ -28,6 +28,9 @@
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
+nav {
+  margin: -5px 0;
+}
 infobar {
   margin: 0;
   position: absolute;
