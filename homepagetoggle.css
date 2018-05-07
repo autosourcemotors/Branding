@@ -1,4 +1,4 @@
-.maxwidth {width:100vw !important;max-width:100vw;background:red !important}
+.maxwidth {width:100vw !important ;max-width:100vw !important; background:red !important}
 .expanded-toggle {
   display: none !important;
 }
