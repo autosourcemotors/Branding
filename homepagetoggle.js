@@ -1,4 +1,4 @@
-$(window).on('ready',function(){
+jQuery(document).ready(function(){
   $("#customSalesEventRow").addClass = 'expanded';
   $("#customSalesEventRow").addClass = 'override';
   $('#customSalesEventRow .container-wide').css('cssText', 'max-width: 100vw !important');
