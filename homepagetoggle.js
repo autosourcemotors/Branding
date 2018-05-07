@@ -1,6 +1,8 @@
 window.onload = function(){
-  document.getElementById('customSalesEventRow').className = 'expanded';
-  document.getElementById('customSalesEventRow').className = 'override';
+  $('#customSalesEventRow > .container-wide').css('cssText', 'max-width: 100vw !important');
+  $('#customSalesEventRow > .container-wide').css('cssText', 'width: 100vw !important');
+  $("#customSalesEventRow").addClass = 'expanded';
+  $("#customSalesEventRow").addClass = 'override';
   $(".expanded-row-title").remove();
   $(".collapsed-row").remove();
   $(".expanded-toggle").remove();
