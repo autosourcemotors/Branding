@@ -49,7 +49,6 @@
 
   .banner {
     font-weight: bold;
-    height: 12.5vh;
     color: #fff;
     font-size: 64px;
     margin: -10px 0 0 0;
@@ -202,25 +201,26 @@
   {
     $('#floodhover').hide();
     $('#comparisionhover').hide();
+
     $("#menu1").mouseenter(function()
     {
-      $('#floodhover').fadeIn(150);
-      $('#flood').fadeOut(150);
+      $('#floodhover').fadeIn(250);
+      $('#flood').fadeOut(250);
     });
     $("#menu1").mouseleave(function()
     {
-      $('#floodhover').fadeOut(150);
-      $('#flood').fadeIn(150);
+      $('#flood').fadeIn(250);
+      $('#floodhover').fadeOut(250);
     });
     $("#menu2").mouseenter(function()
     {
-      $('#comparisionhover').fadeIn(300);
-      $('#comparision').fadeOut(300);
+      $('#comparisionhover').fadeIn(250);
+      $('#comparision').fadeOut(250);
     });
     $("#menu2").mouseleave(function()
     {
-      $('#comparisionhover').fadeOut(300);
-      $('#comparision').fadeIn(300);
+      $('#comparision').fadeIn(250);
+      $('#comparisionhover').fadeOut(250);
     });
   });
 </script>
