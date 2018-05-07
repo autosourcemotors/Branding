@@ -1,5 +1,5 @@
 .maxwidth {width:100vw !important ;max-width:100vw !important;}
-#homepagetoggle {border:none; margin: 0;}
+#homepagetoggle {border:none; margin: 0;width:100vw;}
 .expanded-toggle {
   display: none !important;
 }
