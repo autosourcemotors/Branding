@@ -7,12 +7,6 @@
     display: none !important;
   }
 
-  #videobanner,
-  .video-wrapper {
-    height: 83.5vh !important;
-    margin: 0 !important;
-  }
-
   #customSalesEventRow {
     margin: 0 !important;
     width: 100vw !important;
