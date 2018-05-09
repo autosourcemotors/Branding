@@ -1,42 +1,37 @@
 <link href='https://cdn.rawgit.com/autosourcemotors/truckweek/f6869ced/blog.css' rel='stylesheet' />
+<!--<link href='https://rawgit.com/autosourcemotors/Branding/master/homepagetoggle.css' rel='stylesheet' /> -->
 <!-- DELETE STYLESHEETS BELOW BEFORE POSTING TO WEBSITE -->
 <link rel='stylesheet' id='bootstrap-css-css' href='https://www.myautosource.com/wp-content/themes/DealerInspireCommonTheme/includes/css/bootstrap3.min.css?ver=4.8.3' type='text/css' media='all' />
 <link rel='stylesheet' id='base-child-style-inside-css' href='https://www.myautosource.com/wp-content/themes/DealerInspireDealerTheme/css/inside.css?ver=1509393000' type='text/css' media='all' />
 <link rel='stylesheet' id='base-child-style-css' href='https://www.myautosource.com/wp-content/themes/DealerInspireDealerTheme/css/style.css?ver=1509392828' type='text/css' media='all' />
 <link rel='stylesheet' id='fancybox-css-css' href='https://www.myautosource.com/wp-content/themes/DealerInspireCommonTheme/includes/js/fancybox/source/jquery.fancybox.css?ver=4.8.3' type='text/css' media='all' />
 
+
 <style>
+  html {
+    font-size: 16px;
+  }
+
   .center {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .hover,
-  .hover:hover {
-    color: #fff;
+  .banner {
+    height: 100vh;
   }
 
-  .row a,
-  .row a:hover {
+  .banner,
+  .banner a,
+  .banner a:hover {
     color: #fff;
     text-decoration: none;
   }
 
-  .banner {
-    font-weight: bold;
-    color: #fff;
-    font-size: 64px;
-  }
-
   .banner h1 {
-    font-size: .55em;
-  }
-
-  @media screen and (max-width: 768px) {
-    .banner h1 {
-      font-size: .55em;
-    }
+    font-size: 2em;
+    font-weight: bold;
   }
 
   .one {
@@ -44,8 +39,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 59%;
-    height: 12.5vh;
-    max-height: 12.5vh;
+    height: 50vh;
   }
 
   .two {
@@ -53,8 +47,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 12.5vh;
-    max-height: 12.5vh;
+    height: 50vh;
+  }
+
+  #comparisionhover {
+    font-size: 1.15em;
+    font-weight: 400;
   }
 
   .hov {
@@ -66,69 +64,81 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: .35em;
-    padding: 25px;
-  }
-
-  .hov a,
-  .hov a:hover {
-    color: #cc0000;
+    font-size: 1.3em;
+    line-height: 25px;
+    padding: 15px 50px;
   }
 
   .hovbutton {
     border: 1px solid #fff;
-    padding: 10px 15px;
     cursor: pointer;
     text-transform: uppercase;
-    font-size: .75em;
+    font-size: 1em;
+    font-weight: bold;
     background: #fff;
     color: #cc0000;
   }
+
+  @media screen and (min-width: 768px) {
+    .banner h1 {
+      font-size: 2.5em;
+    }
+    .one,
+    .two {
+      height: 100vh;
+    }
+    .hovbutton {}
+  }
 </style>
 
-<div class="infobar">
-  <nav>
-    <div class="row banner">
-      <a href="https://www.myautosource.com/flood-to-track/">
-        <div id="menu1" class="col-sm-6 one center" style="cursor: default;">
-          <div id="flood">
-            <h1>FLOOD TO TRACK</h1>
-          </div>
-          <div id="floodhover" class='hov center'>
-            <div class="col-sm-8" style="text-transform:uppercase;font-size:.80em;font-weight:400;">Never underestimate a flood vehicle again</div>
-            <div class="col-sm-4 hovbutton">
+<div class="row banner">
+  <a href="https://www.myautosource.com/flood-to-track/">
+    <div id="menu1" class="col-sm-6 one center" style="cursor: default;">
+      <div id="flood">
+        <h1>FLOOD TO TRACK</h1>
+      </div>
+      <div id="floodhover" class='hov'>
+        <div class="row">
+          <a href="https://www.myautosource.com/used-vehicles/#action=im_ajax_call&perform=get_results&make%5B%5D=Honda&page=1&show_all_filters=false&model%5B%5D=Odyssey&order=ASC&orderby=price">
+            <div class="col-sm-12 center" style="padding:0 0 2.5vh 0">
+              Never underestimate a flood vehicle again...
+            </div>
+            <div class="col-xs-12 hovbutton">
               Learn More
             </div>
-          </div>
+          </a>
+        </div>
+      </div>
 
-        </div>
-      </a>
-      <a href="https://www.myautosource.com/used-vehicles/#action=im_ajax_call&perform=get_results&page=1&show_all_filters=false&make%5B%5D=Honda&model%5B%5D=Odyssey&model%5B%5D=Pilot&order=ASC&orderby=price">
-        <div id="menu2" class="col-sm-6 two center">
-          <div id="comparision">
-            <h1 style="cursor: default;">ODYSSEY vs PILOT</h1>
-          </div>
-          <div id="comparisionhover" class='hov center'>
-            <a href="" class="hovbutton">
-              <div class="col-sm-3 ">
-                Odyssey
-              </div>
-            </a>
-            <div class="col-sm-6" style="text-transform:uppercase;font-size:.80em;font-weight:400;">
-              Get an ODYSSEY or PILOT <br>for under $17,000
-            </div>
-            <a href="" class="hovbutton">
-              <div class="col-sm-3 ">
-                Pilot
-              </div>
-            </a>
-          </div>
-        </div>
     </div>
+  </a>
+  <div id="menu2" class="col-sm-6 two center">
+    <div id="comparision">
+      <h1 style="cursor: default;">ODYSSEY vs PILOT</h1>
+    </div>
+    <div id="comparisionhover" class='hov'>
+      <div class="row">
+        <div class="col-sm-12 center" style="padding:0 0 2.5vh 0">
+          Get an ODYSSEY or PILOT for under $17,000
+        </div>
+        <a href="https://www.myautosource.com/used-vehicles/#action=im_ajax_call&perform=get_results&make%5B%5D=Honda&page=1&show_all_filters=false&model%5B%5D=Odyssey&order=ASC&orderby=price">
+          <div class="col-xs-6" style="padding: 0 2.5px;">
+            <div class="hovbutton">
+              Odyssey
+            </div>
+          </div>
+        </a>
+        <a href="https://www.myautosource.com/used-vehicles/#action=im_ajax_call&perform=get_results&make%5B%5D=Honda&page=1&show_all_filters=false&model%5B%5D=Pilot&order=ASC&orderby=price">
+          <div class="col-xs-6" style="padding: 0 2.5px;">
+            <div class="hovbutton">
+              Pilot
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
-</a>
-</div>
-</nav>
 </div>
 
 <script src="https://rawgit.com/autosourcemotors/Branding/master/homepagetoggle.js" type="text/javascript"></script>
