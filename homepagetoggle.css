@@ -1,117 +1,50 @@
-.maxwidth {
-  width: 100vw !important;
-  max-width: 100vw !important;
-}
-.expanded-toggle {
-  display: none !important;
-}
-#videobanner, .video-wrapper {
-  height: 85vh !important;
-  margin: 0 !important;
-}
-#customSalesEventRow {
-  margin: 0 !important;
-  width: 100vw !important;
-  background: #fff !important;
-  display: inline-block !important;
-}
-#customSalesEventRow .container-wide {
-  padding: 0 !important;
-  display: inline-block !important;
-  width: 100vw !important;
-  max-width: 100vw !important;
-  margin: -10px auto 0 auto !important;
-}
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hover, .hover:hover {
-  color: #fff;
-}
-.banner {
-  font-weight: bold;
-  color: #fff;
-  font-size: 64px;
-  margin: -10px 0 0 0;
-}
-.one {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2018/04/flood_to_track-2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 59%;
-  height: 100%;
-}
-.two {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("https://2.bp.blogspot.com/-lbcDA66tCfM/WrCLnTFoTsI/AAAAAAAAREs/ZPF1tTkXzvUOx3SO9UYbKQ6u1I3lXAETgCLcBGAs/s1600/IMG_5146.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 100%;
-}
-.hoverbox {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(204, 0, 0, .5);
-  opacity: 0;
-  transition-duration: 0.3s
-}
-.one:hover>.hoverbox {
-  opacity: 1;
-  transition-duration: 0.3s
-}
-.two:hover>.hoverbox {
-  opacity: 1;
-  transition-duration: 0.3s
-}
-.banner h1 {
-  z-index: 2;
-  font-size: .55em;
-}
-@media screen and (max-width: 768px) {
-  .banner h1 {
-    font-size: .55em;
+  .maxwidth {
+    width: 100vw !important;
+    max-width: 100vw !important;
   }
-}
-.row a, .row a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-.flyout {
-  position: absolute;
-  width: 1000px;
-  height: 450px;
-  background: red;
-  overflow: hidden;
-  z-index: 10000;
-  display: none;
-}
-#menu:hover+.flyout {
-  display: block;
-}
-.hov {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(204, 0, 0, .7);
-  opacity: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: .35em;
-  padding: 25px;
-}
-.hov a, .hov a:hover {
-  color: #cc0000;
-}
-.hovbutton {
-  border: 1px solid #fff;
-  padding: 10px 15px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-size: .75em;
-  background: #fff;
-  color: #cc0000;
-}
+
+  .expanded-toggle {
+    display: none !important;
+  }
+
+  #videobanner,
+  .video-wrapper {
+    height: 85vh !important;
+    margin: 0 !important;
+  }
+
+  #customSalesEventRow {
+    margin: 0 !important;
+    width: 100vw !important;
+    background: #fff !important;
+    display: inline-block !important;
+  }
+
+  #customSalesEventRow .container-wide {
+    padding: 0 !important;
+    display: inline-block !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: -10px auto 0 auto !important;
+  }
+
+  .iframe-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 25vh;
+  }
+
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    .iframe-container {
+      padding-bottom: 12.5vh;
+    }
+  }
