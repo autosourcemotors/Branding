@@ -1,0 +1,524 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- DELETE STYLESHEETS BELOW BEFORE POSTING TO WEBSITE -->
+    <link rel='stylesheet' id='bootstrap-css-css' href='https://www.myautosource.com/wp-content/themes/DealerInspireCommonTheme/includes/css/bootstrap3.min.css?ver=4.8.3'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='base-child-style-inside-css' href='https://www.myautosource.com/wp-content/themes/DealerInspireDealerTheme/css/inside.css?ver=1509393000'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='base-child-style-css' href='https://www.myautosource.com/wp-content/themes/DealerInspireDealerTheme/css/style.css?ver=1509392828'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='fancybox-css-css' href='https://www.myautosource.com/wp-content/themes/DealerInspireCommonTheme/includes/js/fancybox/source/jquery.fancybox.css?ver=4.8.3'
+        type='text/css' media='all' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<style>
+body {
+    background: #efefef;
+    color: #222;
+    font-size: 16px;
+}
+
+.white {
+    background: #fff;
+    color: #222;
+}
+
+.spacer {
+    height: 2.5%;
+}
+
+[class*="col-"] {
+    padding: 0 10px;
+}
+
+.padding {
+    padding: 5%;
+}
+
+.top {
+    height: 48.75%;
+    margin: 20px 0 10px 0;
+}
+
+.bottom {
+    height: 48.75%;
+    margin: 10px 0;
+}
+.bspacer {
+    height:40px;
+}
+.sspacer {
+    height:40px;
+}
+
+@media screen and (min-width: 1000px) {
+    .double {
+        margin: 0;
+    }
+    .top {
+        height: 48%;
+        margin: 0 0 10px 0;
+    }
+
+    .bottom {
+        height: 48.5%;
+        margin: 10px 0 0 0;
+    }
+}
+.fifty {
+    height:800px;
+}
+.sixty {
+    height:1200px;
+}
+
+@media screen and (min-width: 768px) {
+    .fifty {
+        height: 50vh;
+    }
+    .sixty {
+        height: 60vh;
+    }
+}
+
+.header {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.35em;
+    font-weight: bold;
+}
+
+.centercontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    margin: 2.5% 0 0 0;
+    padding: 1.5% 5%;
+}
+
+.one {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2018/03/WX-Aerial1-Small.jpg");
+}
+
+.two {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2017/08/las-vegas-banner-1.jpg");
+}
+
+.builders1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2018/07/Builders1.jpg");
+}
+
+.builders2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2018/07/Builders2.jpg");
+}
+
+.collision1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    url("https://di-uploads-development.s3.amazonaws.com/autosource/uploads/2017/07/IMG_8551-1024x683.jpg");
+}
+
+.collision2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2018/07/Builders2.jpg");
+}
+
+.flood1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2017/10/floodcars.jpg");
+}
+
+.flood2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2017/09/Level-1-Flood-Resized.jpg");
+}
+
+.hail1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2017/11/HailDamagedJeeps-2.jpg");
+}
+
+.hail2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2017/11/BodyWork.jpg");
+}
+
+.theft1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2018/07/Theft3.jpg");
+}
+
+.theft2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2018/07/Theft2.jpg");
+}
+
+.pop-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2017/09/Level-1-Flood-Resized.jpg");
+}
+
+.pop-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2017/09/Level-1-Flood-Resized.jpg");
+}
+
+.pop-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2017/09/Level-1-Flood-Resized.jpg");
+}
+
+.pop-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
+    url("https://di-uploads-pod12.dealerinspire.com/autosource/uploads/2017/09/Level-1-Flood-Resized.jpg");
+}
+
+.one,
+.two,
+[class*="pop-"],
+[class*="builders"],
+[class*="hail"],
+[class*="theft"],
+[class*="flood"],
+[class*="collision"] {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:100%;
+    max-height: 400px;
+}
+
+
+#flood>ul {
+    font-size: .90em;
+}
+
+.btn {
+    font-size: 1.15em;
+    color: #fff;
+    background: #cc0000;
+    border-radius: 0px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active {
+    color: #fff !important;
+    background-color: #B40000;
+    text-decoration: none;
+}
+
+.mh {
+    max-height: 400px;
+}
+</style>
+
+<body>
+
+    <div class="row">
+        <div class="centercontainer padding" style="text-align:center;height:33vh;width:100%;background:#222;">
+            <div class="col-xs-12 col-md-6">
+                <div class="header" style="color:#fff">"What exactly is a branded title vehicle and why are they trending in popularity?"</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12" style="height:80px"></div>
+    <!--Spacer-->
+
+    <div class="container">
+        
+        <div class="row fifty">
+            <div class="col-md-8 col-md-push-4">
+                <div class="col-xs-12 white centercontainer" style="height:100%;">
+                    <div id="popularity" class="col-xs-12 padding">
+                        <div class="subtitle">The explosion in popularity around buying branded title cars is simply due to education.</div>
+                        <hr> Car buyers are more savvy than they once were about branded titles and the extraordinary value and
+                        safety they provide. How are car buyers suddenly getting smarter about car buying? It could be the
+                        growing media coverage celebrating branded title cars or it might be the thousands upon thousands
+                        of people now driving branded title cars who are enthusiastically talking about how much they love
+                        their AutoSource branded title car.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-pull-8">
+                <div class="col-xs-12 top one" style="height:100%;">
+                </div>
+                <div class="col-xs-12 bottom two">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12" style="height:50px"></div>
+        <!--Spacer-->
+
+        <div class="row sixty">
+            <div class="col-xs-12 white centercontainer padding" style="height:100%;">
+                <div class="col-xs-12">
+                    <div class="subtitle">A branded title vehicle is any vehicle which has experienced an insurance incident.</div>
+                    <hr>
+                    <div class="col-md-4">
+                        There are some levels of insurance claims that result in the title of a car being changed to represent the insurance incident.
+                        Let's say you get rear-ended in a parking lot and your car sustains significant damage. Even if you
+                        have the car professionally repaired and the car is as good as new, the insurance company can still
+                        have the title of your car changed from "Clean" to "Salvage". In other words, the title has been
+                        branded.
+                    </div>
+                    <div class="col-md-4">
+                        This "brand" has nothing to do with the current condition of the vehicle. Regardless of how great the car runs and looks
+                        after having the damage removed and returned to new, the title will be branded forever. That is why
+                        smart car buyers can purchase great cars at significantly lower prices. Branded title cars sell for
+                        lower prices even though they are exactly like their clean title counterparts. This gives wise car
+                        buyers a tremendous cost savings.
+                    </div>
+                    <div class="col-md-4">
+                        This value proposition is why branded title cars have become so popular and are getting harder to find.
+                        <br />
+                        <br />That is why AutoSource specializes in branded title cars and trucks. AutoSource is the largest dealer
+                        in the United States dedicated exclusively to finding the cleanest branded title cars in America
+                        and offering them to savvy car buyers wanting a great car at a great price.
+                    </div>
+                    <div class="col-md-12" style="margin:20px 0 0 0">
+                        Here is a list of the top branded categories for value, safety and reliability:
+                        <li><a href="#collision">Collision</a></li>
+                        <li><a href="#flood">Flood</a></li>
+                        <li><a href="#hail">Hail</a></li>
+                        <li><a href="#theft">Theft Recovery</a></li>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xs-12 bspacer"></div>
+        <!--Spacer-->
+
+        <div class="row fifty">
+            <div class="col-md-8">
+                <div class="col-xs-12 white centercontainer" style="height:100%;">
+                    <div id="collision" class="col-xs-12 padding">
+                        <div class="subtitle">Branded Due to Collision</div>
+                        <hr> Each day in America, there are nearly 20,000 vehicle accidents. Those accidents create vehicle damage
+                        ranging from minor bumps and scrapes to total loss. With so many thousands of cars receiving "branded
+                        title" status every day, the AutoSource Certified Buyers are trained to seek out the vehicles with
+                        less damage, the cream of the crop.
+                        <br />
+                        <br />Those hand-selected vehicles are then professionally repaired by Authorized AutoSource Rebuilders.
+                        All, damaged parts are replaced with new parts and then the vehicle is road tested on an aggressive
+                        Drive Cycle. Once the vehicle successfully completes the road test, our Certified Inspectors conduct
+                        a comprehensive 151 Point Inspection to make certain the vehicle has been fully reconditioned and
+                        is ready for a new owner.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-xs-12 top collision1"></div>
+                <div class="col-xs-12 bottom collision2"></div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 bspacer"></div>
+        <!--Spacer-->
+
+        <div class="row fifty">
+            <div class="col-md-8 col-md-push-4">
+                <div class="col-xs-12 white centercontainer" style="height:100%;">
+                    <div id="flood" class="col-xs-12 padding">
+                        <div class="subtitle">Branded Due to Flood</div>
+                        <hr> A vehicle which receives a branded title due to "flood" is the most requested type of branded vehicle
+                        we sell at AutoSource. It is also the hardest to find, but our Certified Buyers keep finding more!
+                        A "flood" car simply means the vehicle has been in or near some water. It does NOT mean the car has
+                        been under water- not at AutoSource. Be warned: There are less reputable organizations selling flood
+                        cars which have in fact been submerged. Do NOT purchase any flood car which has been submerged.
+
+                        <br />
+                        <br /> Our highly trained Reconditioning Team goes through a comprehensive moisture extraction process
+                        using state of the art equipment and process to return the vehicle to pre-flood condition. After
+                        reconditioning is completed, our Inspection team does a final inspection, testing all electronics,
+                        switches and fuses to make 100% certain everything in the vehicle is fully operational.
+                        <div style="margin:20px 0 0 0;">
+                            <a class="btn" onclick="changeVideo('CsbLOURLCo4')">Watch How We Do It</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-pull-8">
+                    <div class="col-xs-12 top flood1"></div>
+                    <div class="col-xs-12 bottom flood2"></div>
+                </div>
+        </div>
+
+        <div class="col-xs-12" style="height:20px"></div>
+        <!--Spacer-->
+
+        <div class="row fifty">
+            <div class="col-md-12">
+                <div class="col-xs-12 white centercontainer" style="height:100%;">
+                    <div class="col-xs-12 padding">
+                        <div class="subtitle">At AutoSource, we LOVE Level 1 and Level 2 Flood Cars!</div>
+                        <hr> Our Certified Buyers use a very strict guide when acquiring vehicles. It is called The 4 Level Flood
+                        Standard. They classify each flood vehicle as either a level 1, level 2, level 3 or level 4. Here
+                        is a description of those four levels:
+                        <br />
+                        <br />
+                        <ul>
+                            <li>Level 1: Water has been near the vehicle and in some cases water has risen to mid-tire level,
+                                but has NOT entered the interior of the vehicle.</li>
+                            <li>Level 2: Water has risen high enough to enter the bottoms of the doors, resulting in water engaging
+                                on the floorboards of the vehicle.</li>
+                            <li>Level 3: Water has entered the vehicle and reached the bottom of the passenger seats.</li>
+                            <li>Level 4: Water has entered the passenger cabin and has risen to the dashboard or above.</li>
+                        </ul>
+                        <b>NOTE:</b> AutoSource Certified Buyers only seek out Level 1 and Level 2 flood vehicles. This is not
+                        true for others who sell branded title vehicles.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 bspacer"></div>
+        <!--Spacer-->
+
+        <div class="row sixty">
+            <div class="col-md-4">
+                <div class="col-xs-12 top hail1"></div>
+                <div class="col-xs-12 bottom hail2"></div>
+            </div>
+            <div class="col-md-8">
+                <div class="col-xs-12 white centercontainer" style="height:100%;">
+                    <div id="hail" class="col-xs-12 padding">
+                        <div class="subtitle">Branded Due to Hail</div>
+                        <hr> This type of branded title vehicle is self-explanatory but here is additional insight as to why
+                        it makes the Top 5 and how we recondition a hail damaged vehicle.
+                        <br />
+                        <br /> Hail comes in all shapes and sizes and usually without warning. Most hail is small pellets of ice
+                        while some hail has been known to be as large as baseballs! Throwing dozens of baseball-sized ice
+                        chunks at a car can leave small dings on the top surfaces of a vehicle such as hood, roof and trunk
+                        lid.
+                        <br />
+                        <br /> Ding removal is a very time-consuming process and most insurance companies would rather brand the
+                        title than invest in the expensive process of ding removal. Our Certified Buyers actively follow
+                        weather patterns, so they can be the first buyers on scene to purchase vehicles impacted by hail.
+                        <br />
+                        <br /> AutoSource has invested heavily in the technology and key personnel who specialize in hail damage
+                        reversal. The results are stunning! Once the Hail Reversal Team completes their work, the vehicle
+                        goes through a final inspection and is then made available to the smart car buyers who come into
+                        our dealerships every day seeking these hard-to-find branded title vehicles.
+                        <div style="margin:20px 0 0 0;">
+                            <a class="btn" onclick="changeVideo('kD0cfODDhwo')">Before & After Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 bspacer"></div>
+        <!--Spacer-->
+
+        <div class="row fifty">
+            <div class="col-md-8">
+                <div class="col-xs-12 white centercontainer" style="height:100%;">
+                    <div id="theft" class="col-xs-12 padding">
+                        <div class="subtitle">Branded Due to Theft</div>
+                        <hr>Every day in the United States, over 2,000 cars and trucks are stolen from their owners. These vehicles
+                        usually sustain some level of damage in the process and often end up as branded title vehicles.
+                        <br />
+                        <br />Our Certified AutoSource Buyers are alerted to these thefts and are quick to go inspect the recovered
+                        vehicles. If the damage is minor, our team purchases the vehicle and immediately sends it to our
+                        Theft Reconditioning Team to meticulously go through the vehicle from front to back, cleaning, repairing
+                        damage and then conducting a test-drive. From there, our Certified Inspection Team conducts a comprehensive
+                        151-point inspection before giving the vehicle the AutoSource Seal of Approval.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-xs-12 top theft1"></div>
+                <div class="col-xs-12 bottom theft2"></div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 bspacer"></div>
+        <!--Spacer-->
+
+        <div class="row fifty">
+            <div class="col-md-4">
+                <div class="col-xs-12 top builders1"></div>
+                <div class="col-xs-12 bottom builders2"></div>
+            </div>
+            <div class="col-md-8">
+                <div class="col-xs-12 white centercontainer" style="height:100%;">
+                    <div class="col-xs-12 padding">
+                        <div class="subtitle">The Heroes: AutoSource Certified Buyers</div>
+                        <hr> AutoSource is the largest retailer of branded title vehicles in the United States. With over 25,000
+                        vehicles sold (and counting!) AutoSource has set the standard for high quality, high value branded
+                        title cars and trucks. Our secret? Our extraordinary team of Certified Buyers!
+                        <br />
+                        <br /> These men and women are among the most respected branded title vehicle evaluators in the world.
+                        To become an AutoSource Certified Buyer, one must have a deep knowledge and background in the automotive
+                        industry and/or insurance industry as well as a working knowledge of the reconditioning and rebuilding
+                        process.
+                        <br />
+                        <br /> Their full-time job consists of traveling the United States reviewing and inspecting entire inventories
+                        of branded title cars and trucks, looking for the cream of the crop to then be shipped to AutoSource
+                        for a comprehensive reconditioning and rebuilding process followed by our infamous 151 point inspection
+                        of the entire vehicle.
+                        <br />
+                        <br /> Our Certified Buyers are very hard to please and on some days it is not uncommon for them to reject
+                        90% of the vehicles they inspect. AutoSource is committed to selling you and your family a car you
+                        can enjoy and rely on for many years to come.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12" style="height:80px"></div>
+        <!--Spacer-->
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document" style="width:1280px;height:720px;">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <iframe id="iframeYoutube" width="1280" height="720" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            $(document).ready(function () {
+                $("#myModal").on("hidden.bs.modal", function () {
+                    $("#iframeYoutube").attr("src", "#");
+                })
+            })
+
+            function changeVideo(vId) {
+                var iframe = document.getElementById("iframeYoutube");
+                iframe.src = "https://www.youtube.com/embed/" + vId;
+
+                $("#myModal").modal("show");
+            }
+        </script>
+
+        <!--End of Container-->
+    </div>
+    </div>
+
+</body>
