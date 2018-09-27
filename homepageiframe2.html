@@ -1,0 +1,66 @@
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .maxwidth {
+      width: 100vw !important;
+      max-width: 100vw !important;
+    }
+
+    .expanded-toggle {
+      display: none !important;
+    }
+
+    #videobanner,
+    .video-wrapper {
+      height: 85vh !important;
+      margin: 0 !important;
+    }
+
+    #customSalesEventRow {
+      margin: 0 !important;
+      width: 100vw !important;
+      background: #fff !important;
+      display: inline-block !important;
+    }
+
+    #customSalesEventRow .container-wide {
+      padding: 0 !important;
+      display: inline-block !important;
+      width: 100vw !important;
+      max-width: 100vw !important;
+      margin: -10px auto 0 auto !important;
+    }
+
+    .iframe-container {
+      padding: 0;
+      margin: 0;
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 50vh;
+    }
+
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+      .iframe-container {
+        padding-bottom: 12.5vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="iframe-container">
+    <iframe src="homepageiframe.html"></iframe>
+  </div>
+</body>
