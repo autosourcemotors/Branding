@@ -1,0 +1,166 @@
+body {
+    background: #efefef;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.maintitle {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+    background: #222;
+    padding: 35px 25px;
+    margin: 0 0 50px 0;
+}
+
+.heading {
+    width: 90vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.00em;
+    line-height: 15px;
+    margin: 25px auto 0 auto;
+    padding: 2.5px 30px;
+}
+
+.slick-slider {
+    margin: 0 auto;
+}
+
+.slick-slide {
+    height: auto;
+}
+
+.slider {
+    width: 100%;
+    background: #fff;
+}
+
+.slide {
+    background: #222;
+    color: #fff;
+}
+
+.slide .caption {
+    padding: 10px 15px;
+    height: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .Slider {
+        width: 90vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Slider {
+        width: 90vw;
+    }
+}
+
+.slick-prev,
+.slick-next,
+.slick-prev:hover,
+.slick-next:hover {
+    height: 100%;
+    background: #fff;
+    width: 30px;
+    z-index: 100;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #cc0000;
+}
+
+.youtube {
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.youtube img {
+    width: 105%;
+    height: auto;
+    opacity: 0.95;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.youtube .play-button {
+    width: 90px;
+    height: 60px;
+    background-color: #333;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    opacity: 0.8;
+    border-radius: 6px;
+}
+
+.youtube .play-button:before {
+    content: "";
+    border-style: solid;
+    border-width: 15px 0 15px 26.0px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.youtube .play-button:hover {
+    background: #cc0000;
+}
+
+.youtube img,
+.youtube .play-button {
+    cursor: pointer;
+}
+
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before {
+    position: absolute;
+}
+
+.youtube .play-button,
+.youtube .play-button:before {
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+[style*="--aspect-ratio"]> :first-child {
+    width: 100%;
+}
+
+[style*="--aspect-ratio"]>img {
+    height: auto;
+}
+
+@supports (--custom:property) {
+    [style*="--aspect-ratio"] {
+        position: relative;
+    }
+
+    [style*="--aspect-ratio"]::before {
+        content: "";
+        display: block;
+        padding-bottom: calc(100% / (var(--aspect-ratio)));
+    }
+
+    [style*="--aspect-ratio"]> :first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+}
